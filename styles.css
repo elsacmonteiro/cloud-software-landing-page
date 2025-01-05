@@ -1,0 +1,185 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Colors */
+:root {
+    --primary-color: #8a2be2; /* Roxo */
+    --secondary-color: #ffffff; /* Branco */
+    --bg-color: #000000; /* Preto */
+    --text-color: #ffffff; /* Branco */
+    --white: #ffffff;
+    --hover-color: #6a1bbd; /* Roxo mais escuro */
+}
+
+/* Header */
+#header {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#header-img {
+    width: 100px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold; /* Letras em negrito */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center; /* Centraliza os títulos */
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Features */
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Pricing */
+#pricing h2 {
+    text-align: center; /* Centraliza o título Pricing */
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Pricing Cards */
+#pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.pricing-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+.pricing-card li {
+    margin-bottom: 10px;
+}
+
+/* Contact */
+#contact {
+    text-align: center; /* Centraliza todo o conteúdo dentro da seção Contact */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#email {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#submit {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#submit:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Video Section */
+#video-section {
+    text-align: center; /* Centraliza todo o conteúdo da seção de vídeo */
+}
+
+#video {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin-top: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+    }
+}
